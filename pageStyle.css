@@ -1,0 +1,79 @@
+:root {
+  --brillante: #03e9f4;
+  --obscuro: #000;
+  --claro: #ffff;
+  --rojo: #ff0000;
+  --x: ;
+  --y: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+section .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section .page:nth-child(1){
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: var(--obscuro);
+}
+.page:nth-child(2){
+  /* La propiedad clip-path se agrega mediante javascript */
+  /* La propiedad background se agrega mediante javascript */
+}
+.focus {
+  /* La propiedad box-shadow se agrega mediante javascript */
+  top: -150px;
+  left: -150px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px, solid, var(--claro);
+  transform: translate(var(--x), var(--y));
+}
+.button {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  right: 1vh;
+  top: 5vh;
+}
+#arrow {
+  position: absolute;
+  right: 30vh;
+  top: 10vh;
+  z-index: -1;
+}
+h1 {
+  position: absolute;
+  color: var(--brillante);
+  text-shadow: 0 0 3px var(--brillante), 0 0 6px var(--brillante),
+    0 0 9px var(--brillante);
+  font-size: 2em;
+  right: 60vh;
+  top: 30vh;
+  z-index: -1;
+}
+p {
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  padding-left: 15%;
+  padding-right: 15%;
+  bottom: 20vh;
+  color: var(--claro);
+  text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
+  z-index: -1;
+}
