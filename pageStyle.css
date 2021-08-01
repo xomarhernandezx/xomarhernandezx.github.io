@@ -3,8 +3,6 @@
   --obscuro: #000;
   --claro: #ffff;
   --rojo: #ff0000;
-  --x: ;
-  --y: ;
 }
 * {
   margin: 0;
@@ -47,12 +45,12 @@ section .page:nth-child(1){
   width: 150px;
   position: absolute;
   z-index: 1;
-  right: 1vh;
+  right: -1vh;
   top: 5vh;
 }
 #arrow {
   position: absolute;
-  right: 30vh;
+  right: 20vh;
   top: 10vh;
   z-index: -1;
 }
@@ -76,4 +74,34 @@ p {
   color: var(--claro);
   text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
   z-index: -1;
+}
+
+@media screen and (max-width:400px) {
+  .button{
+    right: -1vh;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .button{
+    right: 2vh;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .button{
+    right: 2vh;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .button{
+    right: 3vh;
+  }
+}
+
+@media screen and (max-width:1900px) {
+  .button{
+    right: 5vh;
+  }
 }

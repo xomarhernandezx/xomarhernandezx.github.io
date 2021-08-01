@@ -14,7 +14,8 @@ pos_mov.addEventListener("touchmove", function(e){
 });
 
 $(document).ready(function () {
-  $(document).mousemove(function () { 
+  $(document).mousemove(function (e) { 
+    e.preventDefault();
     $("#back").css("clipPath", "circle(150px at var(--x) var(--y))");
     $("#back").css("background", "var(--obscuro)");
     $("#focus").css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
@@ -26,11 +27,13 @@ $(document).ready(function () {
     $("#back").css("clipPath", "circle(150px at var(--x) var(--y))");
     $("#back").css("background", "var(--obscuro)");
     $("#focus").css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
+    /* Se agregan estilos CSS al ingresar al documento */
   });
 });
 
 $(document).ready(function () {
-  $(document).mouseleave(function () { 
+  $(document).mouseleave(function (e) { 
+    e.preventDefault();
     $("#back").css("clipPath", "");
     $("#back").css("background", "");
     $("#focus").css("boxShadow", "");
@@ -43,5 +46,6 @@ $(document).ready(function () {
     $("#back").css("clipPath", "");
     $("#back").css("background", "");
     $("#focus").css("boxShadow", "");
+    /* Se cambian estilos CSS al salir del documento */
   });
 });
