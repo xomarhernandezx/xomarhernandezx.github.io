@@ -23,9 +23,9 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(document).on("touchstart", function () {
-    $(document).css("clipPath", "circle(150px at var(--x) var(--y))");
-    $(document).css("background", "var(--obscuro)");
-    $(document).css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
+    $("particles-js").css("clipPath", "circle(150px at var(--x) var(--y))");
+    $("particles-js").css("background", "var(--obscuro)");
+    $("particles-js").css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
     /* Se agregan estilos CSS al ingresar al documento */
   });
 });
@@ -41,9 +41,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(document).on("touchend", function () {
-    $(document).css("clipPath", "");
-    $(document).css("background", "");
-    $(document).css("boxShadow", "");
+    $("body").css("clipPath", "");
+    $("body").css("background", "");
+    $("body").css("boxShadow", "");
     /* Se cambian estilos CSS al salir del documento */
   });
 });
