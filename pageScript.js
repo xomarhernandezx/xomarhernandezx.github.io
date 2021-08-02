@@ -51,5 +51,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#logoButton").click(function (e) { 
     $("#logoButton").toggleClass("rotate");
+    $("#navMov").toggleClass("translate");
   });
 });
