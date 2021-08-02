@@ -8,31 +8,32 @@
   margin: 0;
   padding: 0;
 }
-body {
+html,body{ 
+	width:100%;
+	height:100%;
   overflow: hidden;
 }
-section .page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-section .page:nth-child(1){
-  width: 100%;
-  height: 100%;
+#front{
   background-size: cover;
   background: var(--obscuro);
+  width: 100%;
+  height: 100%;
 }
-.page:nth-child(2){
+#back{
   /* La propiedad clip-path se agrega mediante javascript */
   /* La propiedad background se agrega mediante javascript */
+}
+section .page {
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .focus {
   /* La propiedad box-shadow se agrega mediante javascript */
   top: -150px;
   left: -150px;
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 300px;
   justify-content: center;
@@ -40,68 +41,93 @@ section .page:nth-child(1){
   border: 1px, solid, var(--claro);
   transform: translate(var(--x), var(--y));
 }
-.button {
-  height: 150px;
-  width: 150px;
+/* Zindex: 1 */
+#logoButton{
+  position: relative;
+  z-index: 1;
+  float: right;
+}
+#particles-js{
   position: absolute;
   z-index: 1;
-  right: -1vh;
-  top: 5vh;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
 }
-#arrow {
+/* Zindex: -1 */
+p {
+  display: block;
+  text-align: center;
+  font-size: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  bottom: 30vh;
+  color: var(--claro);
+  text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
   position: absolute;
-  right: 20vh;
-  top: 10vh;
   z-index: -1;
 }
 h1 {
-  position: absolute;
+  display: inline;
   color: var(--brillante);
   text-shadow: 0 0 3px var(--brillante), 0 0 6px var(--brillante),
     0 0 9px var(--brillante);
-  font-size: 2em;
-  right: 60vh;
-  top: 30vh;
+  font-size: 30%;
+  top: 20vh;
+  padding-left: 0.5vh;
+  float: right;
+  position: relative;
+  z-index: -1;
+  transition: 0.5s;
+}
+#arrow {
+  width: 30%;
+  height: 30%;
+  display: inline;
+  position: relative;
+  padding-right: 20vh;
+  float: right;
   z-index: -1;
 }
-p {
-  text-align: center;
-  font-size: 2em;
-  position: absolute;
-  padding-left: 15%;
-  padding-right: 15%;
-  bottom: 20vh;
-  color: var(--claro);
-  text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
-  z-index: -1;
-}
-
-@media screen and (max-width:400px) {
-  .button{
-    right: -1vh;
+/* Media Query */
+@media screen and (min-width:400px) {
+  h1 {
+    font-size: 35%;
+    transition: 0.5s;
+  }
+  p {
+    font-size: 20%;
+    transition: 0.5s;
   }
 }
-
-@media screen and (max-width:600px) {
-  .button{
-    right: 2vh;
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 40%;
+    transition: 0.5s;
+  }
+  p {
+    font-size: 25%;
+    transition: 0.5s;
   }
 }
-
-@media screen and (max-width:800px) {
-  .button{
-    right: 2vh;
+@media screen and (min-width:1024px) {
+  h1 {
+    font-size: 45%;
+    transition: 0.5s;
+  }
+  p {
+    font-size: 30%;
+    transition: 0.5s;
   }
 }
-
-@media screen and (max-width:1200px) {
-  .button{
-    right: 3vh;
+@media screen and (min-width:1068px) {
+  h1 {
+    font-size: 50%;
+    transition: 0.5s;
   }
-}
-
-@media screen and (max-width:1900px) {
-  .button{
-    right: 5vh;
+  p {
+    font-size: 35%;
+    transition: 0.5s;
   }
 }
