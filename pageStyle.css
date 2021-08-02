@@ -42,9 +42,14 @@ section .page {
   transform: translate(var(--x), var(--y));
 }
 /* Zindex: 1 */
+.button{
+  transform: rotateZ(0);
+  transition: 2s;
+}
 #logoButton{
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  /* Se selecciona con valor 2 para ser pulsado */
   float: right;
 }
 #particles-js{
@@ -89,6 +94,10 @@ h1 {
   padding-right: 20vh;
   float: right;
   z-index: -1;
+}
+.rotate{
+  transform: rotateZ(90deg);
+  transition: 2s;
 }
 /* Media Query */
 @media screen and (min-width:400px) {

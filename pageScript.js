@@ -47,3 +47,9 @@ $(document).ready(function () {
     /* Se cambian estilos CSS al salir del documento */
   });
 });
+
+$(document).ready(function () {
+  $("#logoButton").click(function (e) { 
+    $("#logoButton").toggleClass("rotate");
+  });
+});
