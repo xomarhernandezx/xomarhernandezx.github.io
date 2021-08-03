@@ -15,7 +15,7 @@ pos_mov.addEventListener("touchmove", function(e){
 
 $(document).ready(function () {
   $(document).mousemove(function (e) { 
-    $("#back").css("clipPath", "circle(100px at var(--x) var(--y))");
+    $("#back").css("-webkit-clipPath", "circle(100px at var(--x) var(--y))");
     $("#back").css("background", "var(--obscuro)");
     $("#focus").css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
     /* Se agregan estilos CSS al ingresar al documento */
@@ -23,7 +23,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(document).on("touchstart", function () {
-    $("particles-js").css("clipPath", "circle(100px at var(--x) var(--y))");
+    $("particles-js").css("-webkit-clipPath", "circle(100px at var(--x) var(--y))");
     $("particles-js").css("background", "var(--obscuro)");
     $("particles-js").css("boxShadow", "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)");
     /* Se agregan estilos CSS al ingresar al documento */
