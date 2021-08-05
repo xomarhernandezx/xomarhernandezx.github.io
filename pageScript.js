@@ -59,5 +59,9 @@ $(document).ready(function () {
     function () {
       $("back").css("background", "");
     });
+    $("#focus").toggle(
+      function(){
+      $("focus").css("border", "0px");
+    });
   });
 });
