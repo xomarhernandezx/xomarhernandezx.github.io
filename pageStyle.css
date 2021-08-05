@@ -63,9 +63,9 @@ section .page {
 }
 /* Menú de navegación  */
 #navMov {
-  left: -200px;
-  top: 20%;
-  width: 40%;
+  left: -565px;
+  top: 30%;
+  width: 90%;
   height: 40%;
   position: absolute;
   z-index: 2;
@@ -194,7 +194,7 @@ h1 {
   transition: 2s;
 }
 .translate {
-  transform: translateX(200px);
+  transform: translateX(560px);
   transition: 2s;
 }
 /* Media Query */
