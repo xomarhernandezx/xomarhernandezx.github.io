@@ -72,7 +72,6 @@ li{
   color: var(--claro);
   text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
 }
-
 #about, #works{
   text-align: center;
   height: 30%;
@@ -115,7 +114,7 @@ h1 {
   color: var(--brillante);
   text-shadow: 0 0 3px var(--brillante), 0 0 6px var(--brillante),
     0 0 9px var(--brillante);
-  font-size: 20%;
+  font-size: 25%;
   top: 15%;
   padding-left: 0.2vh;
   float: right;
@@ -124,7 +123,7 @@ h1 {
   transition: 0.5s;
 }
 #arrow {
-  width: 45%;
+  width: 55%;
   height: 25%;
   display: flex;
   position: relative;
@@ -151,6 +150,10 @@ h1 {
     font-size: 20%;
     transition: 0.5s;
   }
+  #navMov{
+    display: none;
+  }
+  
 }
 @media screen and (min-width:768px) {
   h1 {
@@ -161,6 +164,15 @@ h1 {
     font-size: 25%;
     transition: 0.5s;
   }
+  #navMov{
+    display: none;
+  }
+  #arrow {
+    width: 50%;
+    height: 25%;
+    padding-right: 13vh;
+  }
+  
 }
 @media screen and (min-width:1024px) {
   h1 {
@@ -171,6 +183,14 @@ h1 {
     font-size: 30%;
     transition: 0.5s;
   }
+  #navMov{
+    display: none;
+  }
+  #arrow {
+    width: 45%;
+    height: 25%;
+    padding-right: 11vh;
+  }
 }
 @media screen and (min-width:1068px) {
   h1 {
@@ -180,5 +200,13 @@ h1 {
   p {
     font-size: 35%;
     transition: 0.5s;
+  }
+  #navMov{
+    display: none;
+  }
+  #arrow {
+    width: 45%;
+    height: 25%;
+    padding-right: 10vh;
   }
 }
