@@ -52,6 +52,7 @@ $(document).ready(function () {
   $("#logoButton").click(function (e) { 
     $("#logoButton").toggleClass("rotate");
     $("#navMov").toggleClass("translate");
+    $("#navDesk").toggleClass("translate");
     $("#back").toggle(
       function () {
         $("#back").css("-webkit-clipPath", "");
@@ -61,7 +62,7 @@ $(document).ready(function () {
     });
     $("#focus").toggle(
       function(){
-      $("focus").css("border", "0px");
+      $("focus").css("border", "0");
     });
   });
 });

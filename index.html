@@ -14,12 +14,12 @@
   <body>
     <div class="button" id="logoButton">
       <svg
-          width="120"
-          height="120"
-          viewBox="0 -10 200 350"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        width="120"
+        height="120"
+        viewBox="0 -10 200 350"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g id="letterH">
           <line
             x1="66"
@@ -49,9 +49,16 @@
             stroke-linecap="round"
           />
         </g>
-          <circle cx="100" cy="132" r="90" stroke="#FF0000" stroke-width="20" id="letterO"/>
-          <!--Logotipo blur -->
-          <g>
+        <circle
+          cx="100"
+          cy="132"
+          r="90"
+          stroke="#FF0000"
+          stroke-width="20"
+          id="letterO"
+        />
+        <!--Logotipo blur -->
+        <g>
           <line
             x1="66"
             y1="10"
@@ -90,32 +97,55 @@
             stroke-width="20"
             filter="url(#shadowFilter)"
           />
-          <defs>
-            <filter id="shadowFilter" filterUnits="userSpaceOnUse">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
-              <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
-              <feGaussianBlur in="SourceGraphic" stdDeviation="9" />
-            </filter>
-          </defs>
-        </svg>
-        <!-- ** Particulas **-->
+        </g>
+        <defs>
+          <filter id="shadowFilter" filterUnits="userSpaceOnUse">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="9" />
+          </filter>
+        </defs>
+      </svg>
+      <!-- ** Particulas **-->
     </div>
     <div id="navMov">
-    <div class="content" id="about">
+      <div class="contentMov" id="aboutMov">
         <span>Acerca de mi</span>
-      </div> 
-      <div class="content" id="works">
-        <span>Trabajos</span>
       </div>
-      <div class="content" id="contact">
+      <div class="contentMov" id="worksMov">
+        <span>Proyectos</span>
+      </div>
+      <div class="contentMov" id="contactMov">
+        <span>Tips</span>
+      </div>
+      <div class="contentMov" id="tipsMov">
         <span>Contacto</span>
-      </div>> 
+      </div>
+      <div class="contentMov" id="footerMov">
+        <span>Hola soy Omar</span>
+      </div>
     </div>
-    
+    <div id="navDesk">
+      <div class="contentDesk" id="aboutDesk">
+        <span>Acerca de mi</span>
+      </div>
+      <div class="contentDesk" id="worksDesk">
+        <span>Proyectos</span>
+      </div>
+      <div class="contentDesk" id="contactDesk">
+        <span>Tips</span>
+      </div>
+      <div class="contentDesk" id="tipsDesk">
+        <span>Contacto</span>
+      </div>
+      <div class="contentDesk" id="footerDesk">
+        <span>Hola soy Omar</span>
+      </div>
+    </div>
     <div id="particles-js">
       <!-- ** Fin de logotipo **-->
     </div>
-  
+
     <section>
       <div class="page" id="front"></div>
       <div class="page" id="back">
