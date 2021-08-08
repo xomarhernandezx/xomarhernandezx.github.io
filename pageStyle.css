@@ -197,7 +197,7 @@ span {
   position: absolute;
   z-index: 2;
   transition: 2s;
-  display: grid;
+  display: none;
 }
 .contentDesk {
   align-items: center;
@@ -207,9 +207,17 @@ span {
   border-radius: 5px;
 }
 #aboutDesk {
+  grid-area: 1/1/1/3;
   width: 100%;
   position: relative;
   background: var(--Gradiente_1);
+  transition: 1s;
+}
+#footerDesk {
+  grid-area: 2/1/5/2;
+  width: 95%;
+  position: relative;
+  background: var(--Gradiente_5);
   transition: 1s;
 }
 #worksDesk {
@@ -228,12 +236,6 @@ span {
   width: 100%;
   position: relative;
   background: var(--Gradiente_4);
-  transition: 1s;
-}
-#footerDesk {
-  width: 100%;
-  position: relative;
-  background: var(--Gradiente_5);
   transition: 1s;
 }
 #aboutDesk::after {
@@ -358,12 +360,6 @@ h1 {
   transition: 2s;
 }
 /* Media Query */
-
-@media screen and (max-width: 401px) {
-  #navDesk {
-    display: none;
-  }
-}
 @media screen and (min-width: 400px) {
   h1 {
     font-size: 30%;
@@ -373,11 +369,15 @@ h1 {
     font-size: 20%;
     transition: 0.5s;
   }
-  #navMov {
-    display: none;
-  }
   span {
     padding-top: 11%;
+  }
+  #navMov{
+    display: none;
+  }
+  #navDesk{
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -407,9 +407,6 @@ h1 {
     font-size: 30%;
     transition: 0.5s;
   }
-  #navMov {
-    display: none;
-  }
   #arrow {
     width: 45%;
     height: 25%;
@@ -427,10 +424,7 @@ h1 {
   p {
     font-size: 35%;
     transition: 0.5s;
-  }
-  #navMov {
-    display: none;
-  }
+  } 
   #arrow {
     width: 45%;
     height: 25%;
