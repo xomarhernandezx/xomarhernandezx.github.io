@@ -91,7 +91,7 @@ span {
   background: var(--Gradiente_1);
   transition: 1s;
 }
-#worksMov {
+#projectsMov {
   text-align: center;
   width: 100%;
   position: relative;
@@ -132,7 +132,7 @@ span {
   filter: blur(8px);
   background: var(--Gradiente_1);
 }
-#worksMov::after {
+#projectsMov::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -181,7 +181,7 @@ span {
   background: var(--Gradiente_5);
 }
 #aboutMov:hover,
-#worksMov:hover,
+#projectsMov:hover,
 #contactMov:hover,
 #tipsMov:hover,
 #footerMov:hover {
@@ -220,7 +220,7 @@ span {
   background: var(--Gradiente_5);
   transition: 1s;
 }
-#worksDesk {
+#projectsDesk {
   width: 100%;
   position: relative;
   background: var(--Gradiente_2);
@@ -250,7 +250,7 @@ span {
   filter: blur(8px);
   background: var(--Gradiente_1);
 }
-#worksDesk::after {
+#projectsDesk::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -299,7 +299,7 @@ span {
   background: var(--Gradiente_5);
 }
 #aboutDesk:hover,
-#worksDesk:hover,
+#projectsDesk:hover,
 #contactDesk:hover,
 #tipsDesk:hover, #footerDesk:hover {
   transform: translateX(-20px);
