@@ -62,7 +62,10 @@ $(document).ready(function () {
     });
     $("#focus").toggle(
       function(){
-      $("focus").css("border", "0");
+      $("#focus").css("border", "0");
+    });
+    $("#particles-js").toggle(function(){
+      $("#particles-js").css("zindex", "-3");
     });
   });
 });

@@ -357,7 +357,7 @@ h1 {
 }
 .translate {
   transform: translateX(185%);
-  transition: 2s;
+  transition: 1.5s;
 }
 #landscape {
   display: none;
