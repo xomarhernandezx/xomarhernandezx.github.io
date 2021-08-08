@@ -191,9 +191,9 @@ span {
 /* Menú de navegación para escritorio */
 #navDesk {
   left: -166%;
-  top: 22%;
-  width: 92%;
-  height: 70%;
+  top: 18%;
+  width: 91%;
+  height: 79%;
   position: absolute;
   z-index: 2;
   transition: 2s;
@@ -359,7 +359,31 @@ h1 {
   transform: translateX(185%);
   transition: 2s;
 }
+#landscape {
+  display: none;
+}
 /* Media Query */
+@media(max-width: 768px) and (orientation: landscape){
+  #landscape {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--claro);
+    color: var(--obscuro);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+  #landscape p{
+    font-size: 200%;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+    color: var(--obscuro);
+  }
+  }
 @media screen and (min-width: 400px) {
   h1 {
     font-size: 30%;
