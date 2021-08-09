@@ -52,7 +52,11 @@ $(document).ready(function () {
   $("#logoButton").click(function (e) { 
     $("#logoButton").toggleClass("rotate");
     $("#navMov").toggleClass("translate");
-    $("#navDesk").toggleClass("translate");
+    $("#aboutDesk").toggleClass("translateA");
+    $("#footerDesk").toggleClass("translateF");
+    $("#projectsDesk").toggleClass("translatePCT");
+    $("#tipsDesk").toggleClass("translatePCT");
+    $("#contactDesk").toggleClass("translatePCT");
     $("#back").toggle(
       function () {
         $("#back").css("-webkit-clipPath", "");
