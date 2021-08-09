@@ -195,7 +195,7 @@ span {
   width: 91%;
   height: 79%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   transition: 2s;
   display: none;
 }
