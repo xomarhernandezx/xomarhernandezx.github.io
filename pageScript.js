@@ -73,3 +73,8 @@ $(document).ready(function () {
     });
   });
 });
+$("#aboutDesk").click(function (e) { 
+  $(location).attr("href", "about.html");
+  jq
+  
+});
