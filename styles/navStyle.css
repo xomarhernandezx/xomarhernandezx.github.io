@@ -15,12 +15,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 /* Zindex: 2 */
 .button {
   transform: rotateZ(0);
@@ -283,4 +277,3 @@ body {
   transform: translateY(200vh);
   transition: 1.5s;
 }
-/* Media Query */
