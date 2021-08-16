@@ -1,0 +1,101 @@
+:root {
+  --brillante: #03e9f4;
+  --obscuro: #000;
+  --claro: #ffff;
+  --rojo: #ff0000;
+  --Gradiente_1: linear-gradient(45deg, #ffbc00, #ff0058);
+  --Gradiente_2: linear-gradient(45deg, #03a9f4, #ff0058);
+  --Gradiente_3: linear-gradient(45deg, #4dff03, #ff0058);
+  --Gradiente_4: linear-gradient(45deg, #47021f, #ff0058);
+  --PFont:'Indie Flower', cursive;
+  --TFont:'Shadows Into Light Two', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#front {
+  background-size: cover;
+  background: var(--obscuro);
+  width: 100%;
+  height: 100%;
+}
+#back {
+  /* La propiedad clip-path se agrega mediante javascript */
+  /* La propiedad background se agrega mediante javascript */
+}
+section .page {
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.focus {
+  /* La propiedad box-shadow se agrega mediante javascript */
+  top: -100px;
+  left: -100px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px, solid, var(--claro);
+  transform: translate(var(--x), var(--y));
+}
+/* Zindex: 2 */
+/* Zindex: 1 */
+#particles-js {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+/* Zindex: -1 */
+section p {
+  display: block;
+  text-align: center;
+  font-size: 30%;
+  color: var(--claro);
+  text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
+  position: absolute;
+  right: 10%;
+  top: 60%;
+  z-index: -1;
+  font-family: var(--PFont);
+}
+h1 {
+  display: inline;
+  color: var(--brillante);
+  text-shadow: 0 0 3px var(--brillante), 0 0 6px var(--brillante),
+    0 0 9px var(--brillante);
+  font-size: 25%;
+  top: 15%;
+  padding-left: 0.2vh;
+  float: right;
+  position: relative;
+  z-index: -1;
+  transition: 0.5s;
+  font-family: var(--TFont);
+}
+#arrow {
+  width: 55%;
+  height: 25%;
+  display: flex;
+  position: relative;
+  padding-right: 15vh;
+  float: right;
+  z-index: -1;
+}

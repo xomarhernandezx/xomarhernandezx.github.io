@@ -50,13 +50,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#logoButton").click(function (e) { 
-    $("#logoButton").toggleClass("rotate");
-    $("#navMov").toggleClass("translate");
-    $("#aboutDesk").toggleClass("translateA");
-    $("#contactDesk").toggleClass("translateC");
-    $("#projectsDesk").toggleClass("translateP");
-    $("#tipsDesk").toggleClass("translateT");
-    $("#footerDesk").toggleClass("translateF");
     $("#back").toggle(
       function () {
         $("#back").css("-webkit-clipPath", "");
@@ -73,6 +66,8 @@ $(document).ready(function () {
     });
   });
 });
+
+/* Se redirecciona a una nueva ruta */
 $("#aboutDesk").click(function (e) { 
   $(location).attr("href", "about.html");
   jq
