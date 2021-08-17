@@ -9,3 +9,21 @@ $(document).ready(function () {
     $("#footerDesk").toggleClass("translateF");
   });
 });
+/* Se redirecciona a ruta about.html */
+$("#aboutDesk").click(function (e) {
+  $("#loader").css("display", "grid");
+  setTimeout(dir,3000);
+});
+
+function dir() {
+  $(location).attr("href", "about.html");
+}
+/* Se redirecciona a ruta project.html */
+$("#aboutDesk").click(function (e) {
+  $("#loader").css("display", "grid");
+  setTimeout(dir,3000);
+});
+
+function dir() {
+  $(location).attr("href", "about.html");
+}
