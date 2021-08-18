@@ -14,32 +14,8 @@
 html, body{
 background: var(--obscuro);
 }
-section{
-  transform: translate(25%,35%);
-  text-align: center;
-}
-.description{
-  margin: 1%;
-  padding: 1%;
-  width: 50%;
-  border: 3px solid var(--claro);
-  box-shadow: "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)";
-  border-radius: 10px;
-}
-section li{
-  color: var(--brillante);
-  text-shadow: 0 0 6px var(--brillante), 0 0 9px var(--brillante);
-  list-style: none;
-}
-section ul{
-  align-items:stretch;
-}
 section h2{
   color: var(--rojo);
   text-shadow: 0 0 6px var(--rojo), 0 0 9px var(--rojo);
   padding-bottom: 2%;
-}
-section h3{
-  color: var(--claro);
-  text-shadow: 0 0 6px var(--claro), 0 0 9px var(--claro);
 }
