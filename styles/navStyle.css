@@ -50,6 +50,10 @@
   overflow: hidden;
   font-family: var(--TFont);
 }
+.navMovBack{
+  background: var(--obscuro);
+  filter: opacity(0.9);
+}
 .contentMov {
   margin: 10px;
   margin-left: 2vh;
@@ -158,6 +162,10 @@
   transition: 1.5s;
   overflow: hidden;
   font-family: var(--TFont);
+}
+.navDeskBack{
+  background: var(--obscuro);
+  filter: opacity(0.9);
 }
 .contentDesk {
   filter: opacity(60%);
