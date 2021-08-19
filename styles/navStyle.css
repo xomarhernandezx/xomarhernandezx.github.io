@@ -19,9 +19,6 @@ html,body{
   width: 100%;
   height: 100%;
 }
-.overflowHidden{
-overflow: hidden;
-}
 /* Zindex: 2 */
 .button {
   transform: rotateZ(0);
@@ -267,6 +264,10 @@ overflow: hidden;
 /* Zindex: 1 */
 /* Zindex: -1 */
 /* Querry class */
+.filterBlur{
+  filter: blur(10px);
+  transition: 2s;
+}
 .rotate {
   transform: rotateZ(90deg);
   transition: 2s;

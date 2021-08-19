@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#projectsDesk").toggleClass("translateP");
     $("#tipsDesk").toggleClass("translateT");
     $("#footerDesk").toggleClass("translateF");
-    $("html").toggleClass("overflowHidden");
+    $("section").toggleClass("filterBlur");
   });
 });
 /* Funciones */

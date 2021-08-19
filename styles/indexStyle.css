@@ -16,7 +16,7 @@ section {
 }
 html,
 body {
-  overflow: auto;
+  overflow: hidden;
 }
 #front {
   background-size: cover;
