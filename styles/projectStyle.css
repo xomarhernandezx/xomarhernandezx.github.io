@@ -12,6 +12,7 @@
   --TFont: "Shadows Into Light Two", cursive;
 }
 html, body{
+  overflow: auto;
 background: var(--obscuro);
 }
 section h2{

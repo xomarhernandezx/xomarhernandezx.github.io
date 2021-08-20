@@ -10,6 +10,7 @@ $(document).ready(function () {
     $("#tipsDesk").toggleClass("translateT");
     $("#footerDesk").toggleClass("translateF");
     $("section").toggleClass("filterBlur");
+    $("footer").toggleClass("filterBlur");
   });
 });
 /* Funciones */
