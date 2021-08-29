@@ -1,16 +1,3 @@
-:root {
-  --brillante: #03e9f4;
-  --obscuro: #000;
-  --gris: rgb(39, 37, 37);
-  --claro: #ffff;
-  --rojo: #ff0000;
-  --Gradiente_1: linear-gradient(45deg, #ffbc00, #ff0058);
-  --Gradiente_2: linear-gradient(45deg, #03a9f4, #ff0058);
-  --Gradiente_3: linear-gradient(45deg, #4dff03, #ff0058);
-  --Gradiente_4: linear-gradient(45deg, #47021f, #ff0058);
-  --PFont: "Indie Flower", cursive;
-  --TFont: "Shadows Into Light Two", cursive;
-}
 html, body{
 overflow: auto;
 background: var(--obscuro);

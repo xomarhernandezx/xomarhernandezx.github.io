@@ -4,11 +4,11 @@ $(document).ready(function () {
     $("#navMov").toggleClass("translate");
     $("#navMov").toggleClass("navMovBack");
     $("#navDesk").toggleClass("navDeskBack");
-    $("#aboutDesk").toggleClass("translateA");
-    $("#contactDesk").toggleClass("translateC");
-    $("#projectsDesk").toggleClass("translateP");
-    $("#tipsDesk").toggleClass("translateT");
-    $("#footerDesk").toggleClass("translateF");
+    $("#aboutDesk").toggleClass("translateAD");
+    $("#contactDesk").toggleClass("translateCD");
+    $("#projectsDesk").toggleClass("translatePD");
+    $("#tipsDesk").toggleClass("translateTD");
+    $("#footerDesk").toggleClass("translateFD");
     $("section").toggleClass("filterBlur");
     $("footer").toggleClass("filterBlur");
   });
@@ -28,34 +28,34 @@ function dirC() {
 
 /* Se redirecciona a ruta about.html */
 $("#aboutDesk").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirA,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirA,1000);
 });
 /* Se redirecciona a ruta project.html */
 $("#projectsDesk").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirP,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirP,1000);
 });
 /* Se redirecciona a ruta contact.html */
 $("#contactDesk").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirC,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirC,1000);
 });
 
 /* Movil */
 
 /* Se redirecciona a ruta about.html */
 $("#aboutMov").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirA,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirA,1000);
 });
 /* Se redirecciona a ruta project.html */
 $("#projectsMov").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirP,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirP,1000);
 });
 /* Se redirecciona a ruta contact.html */
 $("#contactMov").click(function (e) {
-  $("#loader").css("display", "grid");
-  setTimeout(dirC,3000);
+  $("#preloader").css("display", "grid");
+  setTimeout(dirC,1000);
 });

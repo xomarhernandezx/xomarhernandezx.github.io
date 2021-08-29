@@ -182,21 +182,21 @@ html,body{
   grid-area: 1/1/2/2;
   position: relative;
   background: var(--Gradiente_1);
-  transition: 1.5s;
+  transition: 1.3s;
 }
 #projectsDesk {
   top: -200vh;
   grid-area: 1/2/2/3;
   position: relative;
   background: var(--Gradiente_2);
-  transition: 1.5s;
+  transition: 1.7s;
 }
 #contactDesk {
   left: -200vh;
   grid-area: 2/1/3/2;
   position: relative;
   background: var(--Gradiente_3);
-  transition: 1.5s;
+  transition: 1s;
 }
 #footerDesk {
   right: -200vh;
@@ -274,22 +274,16 @@ html,body{
 }
 .translate {
   transform: translateX(200vh);
-  transition: 0.5s;
 }
-.translateF {
-  transform: translateX(-200vh);
-  transition: 1.5s;
-}
-.translateA {
+.translateAD {
   transform: translateX(200vh);
-
-  transition: 1.5s;
 }
-.translateC {
+.translateCD {
   transform: translateX(200vh);
-  transition: 1.5s;
 }
-.translateP {
+.translatePD {
   transform: translateY(200vh);
-  transition: 1.5s;
+}
+.translateFD {
+  transform: translateX(-200vh);
 }

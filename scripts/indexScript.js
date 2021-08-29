@@ -24,6 +24,7 @@ $(document).ready(function () {
     /* Se agregan estilos CSS al ingresar al documento */
   });
 });
+
 $(document).ready(function () {
   $(document).on("touchstart", function () {
     $("#back").css("-webkit-clipPath", "circle(100px at var(--x) var(--y))");
