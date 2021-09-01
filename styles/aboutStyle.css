@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html, body{
-  overflow: auto;
+overflow: auto;
 background: var(--obscuro);
 }
 section{

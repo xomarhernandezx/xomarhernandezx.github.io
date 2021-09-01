@@ -48,7 +48,7 @@ html,body{
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+
   transition: 2s;
   overflow: hidden;
   font-family: var(--TFont);
@@ -70,6 +70,7 @@ html,body{
   position: relative;
   background: var(--Gradiente_1);
   transition: 1s;
+  cursor: pointer;
 }
 #projectsMov {
   left: -200vh;
@@ -78,6 +79,7 @@ html,body{
   position: relative;
   background: var(--Gradiente_2);
   transition: 1.3s;
+  cursor: pointer;
 }
 #contactMov {
   right: -200vh;
@@ -86,6 +88,7 @@ html,body{
   position: relative;
   background: var(--Gradiente_3);
   transition: 1.5s;
+  cursor: pointer;
 }
 #footerMov {
   bottom: -200vh;
@@ -94,6 +97,7 @@ html,body{
   position: relative;
   background: var(--Gradiente_4);
   transition: 1.7s;
+  cursor: pointer;
 }
 #aboutMov::after {
   content: "";
@@ -166,7 +170,6 @@ html,body{
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
   transition: 1.5s;
   overflow: hidden;
   font-family: var(--TFont);
@@ -268,6 +271,9 @@ html,body{
 /* Zindex: 1 */
 /* Zindex: -1 */
 /* Querry class */
+.zindex{
+  z-index: 1;
+  }
 .filterBlur{
   filter: blur(10px);
   transition: 2s;

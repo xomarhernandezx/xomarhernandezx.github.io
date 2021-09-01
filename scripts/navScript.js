@@ -1,11 +1,13 @@
 $(document).ready(function () {
   $("#logoButton").click(function (e) { 
     $("#logoButton").toggleClass("rotate");
+    $("#navMov").toggleClass("zindex", "true");
     $("#aboutMov").toggleClass("translateTB");
     $("#contactMov").toggleClass("translateRL");
     $("#projectsMov").toggleClass("translateLR");
     $("#footerMov").toggleClass("translateBT");
     $("#navMov").toggleClass("navMovBack");
+    $("#navDesk").toggleClass("zindex", "true");
     $("#navDesk").toggleClass("navDeskBack");
     $("#aboutDesk").toggleClass("translateLR");
     $("#contactDesk").toggleClass("translateBT");
@@ -61,3 +63,4 @@ $("#contactMov").click(function (e) {
   $("#preloader").css("display", "grid");
   setTimeout(dirC,1000);
 });
+
