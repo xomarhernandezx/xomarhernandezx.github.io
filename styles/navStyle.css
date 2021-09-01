@@ -45,7 +45,6 @@ html,body{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
-  left: -200vh;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -59,37 +58,42 @@ html,body{
   filter: opacity(0.9);
 }
 .contentMov {
+  filter: opacity(60%);
   margin: 10px;
   margin-left: 2vh;
   border-radius: 5px;
 }
 #aboutMov {
+  top: -200vh;
   grid-area: 1/1/2/3;
   text-align: center;
   position: relative;
   background: var(--Gradiente_1);
-  transition: 0.5s;
+  transition: 1s;
 }
 #projectsMov {
+  left: -200vh;
   grid-area: 2/1/3/3;
   text-align: center;
   position: relative;
   background: var(--Gradiente_2);
-  transition: 0.5s;
+  transition: 1.3s;
 }
 #contactMov {
+  right: -200vh;
   grid-area: 2/3/3/5;
   text-align: center;
   position: relative;
   background: var(--Gradiente_3);
-  transition: 0.5s;
+  transition: 1.5s;
 }
 #footerMov {
+  bottom: -200vh;
   grid-area: 3/1/4/5;
   text-align: center;
   position: relative;
   background: var(--Gradiente_4);
-  transition: 0.5s;
+  transition: 1.7s;
 }
 #aboutMov::after {
   content: "";
@@ -143,7 +147,7 @@ html,body{
 #projectsMov:hover,
 #contactMov:hover,
 #footerMov:hover {
-  transform: translateX(-20px);
+  filter: opacity(100%);
   transition: 1.5s;
 }
 
@@ -192,7 +196,7 @@ html,body{
   transition: 1.7s;
 }
 #contactDesk {
-  left: -200vh;
+  bottom: -200vh;
   grid-area: 2/1/3/2;
   position: relative;
   background: var(--Gradiente_3);
@@ -272,18 +276,15 @@ html,body{
   transform: rotateZ(90deg);
   transition: 2s;
 }
-.translate {
+.translateLR {
   transform: translateX(200vh);
 }
-.translateAD {
-  transform: translateX(200vh);
+.translateBT {
+  transform: translateY(-200vh);
 }
-.translateCD {
-  transform: translateX(200vh);
-}
-.translatePD {
+.translateTB {
   transform: translateY(200vh);
 }
-.translateFD {
+.translateRL {
   transform: translateX(-200vh);
 }

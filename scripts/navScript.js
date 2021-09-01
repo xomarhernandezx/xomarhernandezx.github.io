@@ -1,14 +1,16 @@
 $(document).ready(function () {
   $("#logoButton").click(function (e) { 
     $("#logoButton").toggleClass("rotate");
-    $("#navMov").toggleClass("translate");
+    $("#aboutMov").toggleClass("translateTB");
+    $("#contactMov").toggleClass("translateRL");
+    $("#projectsMov").toggleClass("translateLR");
+    $("#footerMov").toggleClass("translateBT");
     $("#navMov").toggleClass("navMovBack");
     $("#navDesk").toggleClass("navDeskBack");
-    $("#aboutDesk").toggleClass("translateAD");
-    $("#contactDesk").toggleClass("translateCD");
-    $("#projectsDesk").toggleClass("translatePD");
-    $("#tipsDesk").toggleClass("translateTD");
-    $("#footerDesk").toggleClass("translateFD");
+    $("#aboutDesk").toggleClass("translateLR");
+    $("#contactDesk").toggleClass("translateBT");
+    $("#projectsDesk").toggleClass("translateTB");
+    $("#footerDesk").toggleClass("translateRL");
     $("section").toggleClass("filterBlur");
     $("footer").toggleClass("filterBlur");
   });
