@@ -42,13 +42,13 @@ html,body{
   text-shadow: 0 0 3px var(--claro), 0 0 6px var(--claro);
 }
 #navMov {
+  z-index: 1;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   width: 100%;
   height: 100%;
   position: absolute;
-
   transition: 2s;
   overflow: hidden;
   font-family: var(--TFont);
@@ -166,6 +166,7 @@ html,body{
   text-shadow: 0 0 3px var(--claro), 0 0 6px var(--claro);
 }
 #navDesk {
+  z-index: 1;
   display: none;
   width: 100%;
   height: 100%;

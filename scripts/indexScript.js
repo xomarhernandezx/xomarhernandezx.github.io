@@ -15,8 +15,10 @@ pos_mov.addEventListener("touchmove", function (e) {
 
 $(document).ready(function () {
   $(document).mousemove(function (e) {
-    $("#back").css("-webkit-clipPath", "circle(100px at var(--x) var(--y))");
-    $("#back").css("background", "var(--obscuro)");
+    $("#back").css({
+      "-webkit-clipPath": "circle(100px at var(--x) var(--y))",
+      background: "url(./imagen/pared.jpg)",
+    });
     $("#focus").css(
       "boxShadow",
       "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)"
@@ -27,8 +29,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(document).on("touchstart", function () {
-    $("#back").css("-webkit-clipPath", "circle(100px at var(--x) var(--y))");
-    $("#back").css("background", "var(--obscuro)");
+    $("#back").css({
+      "-webkit-clipPath": "circle(100px at var(--x) var(--y))",
+      background: "url(./imagen/pared.jpg)",
+    });
     $("#focus").css(
       "boxShadow",
       "0 0 3px var(--claro), 0 0 6px var(--claro), 0 0 9px var(--claro)"
@@ -39,8 +43,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(document).mouseleave(function (e) {
-    $("#back").css("-webkit-clipPath", "");
-    $("#back").css("background", "");
+    $("#back").css({"-webkit-clipPath": "",background: "",});
     $("#focus").css("boxShadow", "");
     /* Se cambian estilos CSS al salir del documento */
   });
@@ -48,8 +51,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(document).on("touchend", function () {
-    $("#back").css("-webkit-clipPath", "");
-    $("#back").css("background", "");
+    $("#back").css({ "-webkit-clipPath": "", background: "" });
     $("#focus").css("boxShadow", "");
     /* Se cambian estilos CSS al salir del documento */
   });
@@ -57,19 +59,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#logoButton").click(function (e) {
-    $("#back").toggle(
-      function () {
-        $("#back").css("-webkit-clipPath", "");
-      },
-      function () {
-        $("back").css("background", "");
-      }
-    );
-    $("#focus").toggle(function () {
-      $("#focus").css("border", "0");
-    });
-    $("#particles-js").toggle(function () {
-      $("#particles-js").css("zindex", "-3");
-    });
+    $("#back").toggle();
+    $("#focus").toggle();
+    $("#particles-js").toggle();
   });
 });
