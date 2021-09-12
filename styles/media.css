@@ -23,11 +23,10 @@
     padding-right: 13vh;
   }
   #navMov {
-    display: none;
+    z-index: -3;
   }
   #navDesk {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -15,7 +15,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -43,7 +44,6 @@ html,body{
 }
 #navMov {
   z-index: 1;
-  display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   width: 100%;
@@ -53,8 +53,8 @@ html,body{
   overflow: hidden;
   font-family: var(--TFont);
 }
-.navMovBack{
-  background: var(--obscuro);
+.navMovBack {
+  background-image: url(../imagen/pared.jpg);
   filter: opacity(0.9);
 }
 .contentMov {
@@ -103,7 +103,7 @@ html,body{
   content: "";
   position: absolute;
   z-index: -1;
-  display: inline;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
@@ -115,7 +115,7 @@ html,body{
   content: "";
   position: absolute;
   z-index: -1;
-  display: inline;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
@@ -127,7 +127,7 @@ html,body{
   content: "";
   position: absolute;
   z-index: -1;
-  display: inline;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
@@ -139,7 +139,7 @@ html,body{
   content: "";
   position: absolute;
   z-index: -1;
-  display: inline;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
@@ -166,8 +166,9 @@ html,body{
   text-shadow: 0 0 3px var(--claro), 0 0 6px var(--claro);
 }
 #navDesk {
-  z-index: 1;
-  display: none;
+  z-index: -3;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -175,9 +176,10 @@ html,body{
   overflow: hidden;
   font-family: var(--TFont);
 }
-.navDeskBack{
-  background: var(--obscuro);
+.navDeskBack {
+  background-image: url(../imagen/pared.jpg);
   filter: opacity(0.9);
+  transition: 2s;
 }
 .contentDesk {
   filter: opacity(60%);
@@ -272,12 +274,17 @@ html,body{
 /* Zindex: 1 */
 /* Zindex: -1 */
 /* Querry class */
-.zindex{
-  z-index: 1;
-  }
-.filterBlur{
-  filter: blur(10px);
+.displaynone {
+  display: none;
   transition: 2s;
+}
+.displaygrid {
+  display: grid;
+  transition: 2s;
+}
+.filterBlur {
+  filter: blur(10px);
+  transition: 1.5s;
 }
 .rotate {
   transform: rotateZ(90deg);
@@ -285,13 +292,17 @@ html,body{
 }
 .translateLR {
   transform: translateX(200vh);
+  transition: 1.5s;
 }
 .translateBT {
   transform: translateY(-200vh);
+  transition: 1.5s;
 }
 .translateTB {
   transform: translateY(200vh);
+  transition: 1.5s;
 }
 .translateRL {
   transform: translateX(-200vh);
+  transition: 1.5s;
 }
