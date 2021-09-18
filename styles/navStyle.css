@@ -9,6 +9,7 @@
   --Gradiente_4: linear-gradient(45deg, #47021f, #ff0058);
   --PFont: "Indie Flower", cursive;
   --TFont: "Shadows Into Light Two", cursive;
+  --fondo:url(../imagen/paredFondo.jpg)
 }
 * {
   margin: 0;
@@ -54,7 +55,7 @@ body {
   font-family: var(--TFont);
 }
 .navMovBack {
-  background-image: url(../imagen/pared.jpg);
+  background-image: var(--fondo);
   filter: opacity(0.9);
 }
 .contentMov {
@@ -177,7 +178,7 @@ body {
   font-family: var(--TFont);
 }
 .navDeskBack {
-  background-image: url(../imagen/pared.jpg);
+  background-image: var(--fondo);
   filter: opacity(0.9);
   transition: 2s;
 }

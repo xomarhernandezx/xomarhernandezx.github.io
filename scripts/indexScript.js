@@ -17,7 +17,7 @@ $(document).ready(function () {
   $(document).mousemove(function (e) {
     $("#back").css({
       "-webkit-clipPath": "circle(100px at var(--x) var(--y))",
-      background: "url(./imagen/pared.jpg)",
+      background: "url(./imagen/paredInicio.jpg)"
     });
     $("#focus").css(
       "boxShadow",

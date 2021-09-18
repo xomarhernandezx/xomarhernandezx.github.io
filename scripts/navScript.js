@@ -3,11 +3,21 @@ $(document).ready(function () {
     let navDesk = document.getElementById("navDesk");
     let navMov = document.getElementById("navMov");
 
+    navDesk.style.display = (navDesk.dataset.toggled ^= 1) ? "grid" : "none";
+    navMov.style.display = (navMov.dataset.toggled ^= 1) ? "grid" : "none";
+
+    setTimeout(transicion, 100);
+    
+
+    function transicion (){
     $("section").toggleClass("filterBlur");
     $("footer").toggleClass("filterBlur");
     $("#logoButton").toggleClass("rotate");
 
-    navDesk.style.display = (navDesk.dataset.toggled ^= 1) ? "grid" : "none";
+    console.log(navDesk.style.display);
+    console.log(navDesk.dataset.toggled);
+    console.log(navDesk.dataset.toggled ^= 0);
+    console.log("Hola");
 
     $("#navDesk").toggleClass("navDeskBack");
     $("#aboutDesk").toggleClass("translateLR");
@@ -16,14 +26,13 @@ $(document).ready(function () {
     $("#footerDesk").toggleClass("translateRL");
     // Sección de escritorio
 
-    navMov.style.display = (navMov.dataset.toggled ^= 1) ? "grid" : "none";
-
     $("#navMov").toggleClass("navMovBack");
     $("#aboutMov").toggleClass("translateTB");
     $("#contactMov").toggleClass("translateRL");
     $("#projectsMov").toggleClass("translateLR");
     $("#footerMov").toggleClass("translateBT");
     // Sección de movil
+    }
   });
 });
 /* Funciones */

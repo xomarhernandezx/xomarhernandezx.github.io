@@ -1,6 +1,6 @@
 html, body{
   overflow: auto;
-background: var(--obscuro);
+  background-image: url(../imagen/paredFondo.jpg);
 }
 section h2{
   color: var(--rojo);
