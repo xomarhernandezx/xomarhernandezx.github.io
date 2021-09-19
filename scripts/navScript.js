@@ -7,17 +7,11 @@ $(document).ready(function () {
     navMov.style.display = (navMov.dataset.toggled ^= 1) ? "grid" : "none";
 
     setTimeout(transicion, 100);
-    
 
     function transicion (){
     $("section").toggleClass("filterBlur");
     $("footer").toggleClass("filterBlur");
     $("#logoButton").toggleClass("rotate");
-
-    console.log(navDesk.style.display);
-    console.log(navDesk.dataset.toggled);
-    console.log(navDesk.dataset.toggled ^= 0);
-    console.log("Hola");
 
     $("#navDesk").toggleClass("navDeskBack");
     $("#aboutDesk").toggleClass("translateLR");

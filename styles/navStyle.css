@@ -55,7 +55,6 @@ body {
   font-family: var(--TFont);
 }
 .navMovBack {
-  background-image: var(--fondo);
   filter: opacity(0.9);
 }
 .contentMov {
@@ -178,7 +177,6 @@ body {
   font-family: var(--TFont);
 }
 .navDeskBack {
-  background-image: var(--fondo);
   filter: opacity(0.9);
   transition: 2s;
 }
